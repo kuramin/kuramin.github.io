@@ -1,0 +1,48 @@
+<!doctype html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Communicating with a database</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<div>
+				<a href="index.html" class="logo">DMITRY KURAMIN</a>
+				<ul id="navigation">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li class="selected">
+						<a href="projects.html">Projects</a>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="body" class="contact_page">
+			<div class="header">
+				<div class="contact">
+					<h2>Communicating with a database</h2>
+					<p>This section is about sending queries to a remote database and showing results. The database is hosted on <a href="https://heroku.com">Heroku platform</a> and contains one table of points with x-, y- coordinates in an abstract system. User can interact with database by sending SQL-queries, which can be done using a web page in javascript or an application in Java. </p>
+					<p>Web page in javascript can be found <a href="https://whispering-hollows-61635.herokuapp.com/send_db_query.html">HERE</a>. It uses AJAX to send asynchronous requests to backend which resends queries to the database and it uses React to show/hide the text output of the query. After the page is loaded, current state of the table is shown. In order to send a query user should write it into a text input and push the "Send query" button.</p>
+					<!--<p>Java-application can be downloaded HERE. It uses JDBC driver to send requests straight to the database. It performs main functionality, but is still in development.</p>-->
+					<img src="images/db_big.png" width="603" height="500">
+				</div>
+			</div>
+		</div>
+		<div id="footer" div class="footnote">
+			<div>
+				<p>&copy; 2018 Dmitry Kuramin</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

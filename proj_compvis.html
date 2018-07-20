@@ -1,0 +1,70 @@
+<!doctype html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Photogrammetric Computer Vision and Digital Image Processing</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<div>
+				<a href="index.html" class="logo">DMITRY KURAMIN</a>
+				<ul id="navigation">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li class="selected">
+						<a href="projects.html">Projects</a>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="body" class="contact_page">
+			<div class="header">
+				<div class="contact">
+					<h2>Photogrammetric Computer Vision and Digital Image Processing</h2>
+					<p>This section describes exercises which were solved by me during cources PCV and DIP in the university.
+Exercise "Panorama creation" deals with the following three photos of the same planar object which were taken with a slightly different horizontal orientation of camera:
+<img src = "images/ph_left.JPG" width = "400">
+<img src = "images/ph_mid.JPG" width = "400">
+<img src = "images/ph_rig.JPG" width = "400"> <br> <br>
+Program performs stitching of the left image to a center one and then stitching of the right image to the result. For every stitching operation user chooses 4 pairs of matching points. From image coordinates of these points homography in 2D is calculated and applied. Resulting image which is shown below is stored on the disk:
+<img src = "images/panorama.png"> <br> <br>
+
+Exercise "Epipolar lines" performs computation of epipolar lines on the images of the same object taken from different viewpoints.
+User chooses 8 pairs of matching points. Images with epipolar lines are shown and saved.
+<img src = "images/krem1.JPG" width = "600">
+<img src = "images/krem2.JPG" width = "600"> <br> <br>
+
+Exercise "Object in 3D" calculates 3D euclidean coordinates of points of a 3D-object from known coordinates of these points on two images of this object. Also 5 control points with known euclidea coordinates are used. Result is a point cloud in euclidean coordinates. Visualisation of the result shows that the point cloud represents a part of bust of Ludwig van Beethoven: <br>
+<img src = "images/beethoven.PNG" width = "600"> <br> <br>
+
+Exercise "Image restoration" deals with image filtering methods. In the beginning two noises are applied for an input image: salt-and-pepper noise and gaussian noise. Both degraded images are processed by 3 filters: averaging filter, median filter and bilateral filter. The original image, its degraded version and two best results of filtering (median and bilateral filters) are presented:
+<img src = "images/original.jpg" width = "256">
+<img src = "images/noiseType_2.jpg" width = "256">
+<img src = "images/restorated_n1_med.jpg" width = "256">
+<img src = "images/restorated_n2_bil.jpg" width = "256">
+
+Exercise "Unsharp masking" applies operation of unsharp masking to several degraded images. Unsharp masking is a technique of image enhancement which increases local contrast of image edges, so that image is perceived as more sharp. The technique creates a blurry copy of degraded image, subtracts it from initial degraded image, thresholds and scales the difference and then adds the result to initial degraded image. Smoothing of the initial image is done by convolution. This fact is used to compare processing times of spatial convolution and frequency convolution. Convolution in frequency domain is not only much faster, but also its complexity is independent from the kernel size. <br>
+The degraded image and the most representative result of unsharp masking application are the following:
+<img src = "images/degraded_orig_256.jpg" width = "256">
+<img src = "images/orig_256_USM_15x15_5_0.8_freqDom_enhanced.png" width = "256"> <br> <br>
+				</div>
+			</div>
+		</div>
+		<div id="footer" class="footnote">
+			<div>
+				<p>&copy; 2018 Dmitry Kuramin</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
