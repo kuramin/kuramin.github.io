@@ -13,15 +13,15 @@
     	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
 	<script>
 	  function sendEmail() {
-            var xhttp_request = new XMLHttpRequest(); // create request variable
+            //var xhttp_request = new XMLHttpRequest(); // create request variable
 	    document.getElementById("mess").innerHTML = "func ok";//this.responseText;
-            xhttp_request.onreadystatechange = function() { // create callback function for changes in request status
+            /*xhttp_request.onreadystatechange = function() { // create callback function for changes in request status
                 if (this.readyState == 4 && this.status == 200) {      
                         document.getElementById("mess").innerHTML = "response ok";//this.responseText;
                 }
             };
             xhttp_request.open("POST", "send_email.php", true); // open POST request 
-            xhttp_request.send(document.getElementById("mess").value); // define payload and send request
+            xhttp_request.send(document.getElementById("mess").value); // define payload and send request*/
           };
 	</script>
 </head>
@@ -56,7 +56,7 @@
 						<input type="text" name="Email Address" value="Email Address" onblur="this.value=!this.value?'Email Address':this.value;" onfocus="this.select()" onclick="this.value='';">
 						<input type="text" name="Subject" value="Subject" onblur="this.value=!this.value?'Subject':this.value;" onfocus="this.select()" onclick="this.value='';">
 						<textarea name="message" id="mess" cols="50" rows="21" onblur="this.value=!this.value?'message':this.value;" onclick="this.value='';">Message</textarea>
-						<input type="submit" value="Send" id="submit" <!--onclick="sendEmail()"-->>
+						<input type="submit" value="Send" id="submit" onclick="sendEmail()">
 					</form>
 				</div>
 			</div>
