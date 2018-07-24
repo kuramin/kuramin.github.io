@@ -17,6 +17,9 @@ a {
 	text-decoration: none;
 	outline: none;
 }
+a:visited {
+    color: #a3a3a3;
+}
 a:active {
 	background: none;
 }
@@ -42,7 +45,7 @@ img {
 	margin: 0 auto;
 	max-width: 940px;
 	min-height: 60px;
-	padding: 0 10px;
+	padding: 0;
 }
 #header div a.logo {
 	font-family: audiowide-regular-webfont;
@@ -51,7 +54,7 @@ img {
 	display: block;
 	float: left;
 	height: 50px; /*60px; from //*/
-	margin: 10px 15px 0 29px;
+	margin: 10px 50px 0 60px;
 	padding: 0;
 	width: 304px;
 }
@@ -84,7 +87,7 @@ img {
 	line-height: 59px;
 	margin: 0;
 	min-height: 60px;
-	padding: 0 24px;
+	padding: 0 50px;
  *padding: 0 23px; /* Needed for IE8 and old versions */
 	text-align: center;
 	text-transform: uppercase;
