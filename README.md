@@ -1,3 +1,2 @@
-# personal_page.github.io
-
-my personal page on github
+# My personal page on github: 
+kuramin.github.io
